@@ -1,33 +1,14 @@
-﻿Build started 2/12/2015 10:46:30 PM.
+﻿Build started 2/15/2015 9:26:03 PM.
      1>Project "C:\Users\Willy\git\MeshBuilder\MeshBuilder.vcxproj" on node 2 (Rebuild target(s)).
-     1>C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets(1492,5): warning : The referenced project '..\..\..\..\Documents\Visual Studio 2013\Projects\StaticLibrary\OpenGLControlsLib\OpenGLControlsLib.vcxproj' does not exist.
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\Willy\git\OpenGLControls\ /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
          Source.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Willy\git\MeshBuilder\Debug\MeshBuilder.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Willy\git\MeshBuilder\Debug\MeshBuilder.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Willy\git\MeshBuilder\Debug\MeshBuilder.lib" /MACHINE:X86 Debug\Source.obj
-     1>Source.obj : error LNK2019: unresolved external symbol "public: __thiscall Controls::Controls(void)" (??0Controls@@QAE@XZ) referenced in function "void __cdecl `dynamic initializer for 'cameraControls''(void)" (??__EcameraControls@@YAXXZ)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: void __thiscall Controls::normalKeyPressed(unsigned char,int,int)" (?normalKeyPressed@Controls@@QAEXEHH@Z) referenced in function "void __cdecl normalKeyPressed(unsigned char,int,int)" (?normalKeyPressed@@YAXEHH@Z)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: void __thiscall Controls::normalKeyReleased(unsigned char,int,int)" (?normalKeyReleased@Controls@@QAEXEHH@Z) referenced in function "void __cdecl normalKeyReleased(unsigned char,int,int)" (?normalKeyReleased@@YAXEHH@Z)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: void __thiscall Controls::specialKeyPressed(int,int,int)" (?specialKeyPressed@Controls@@QAEXHHH@Z) referenced in function "void __cdecl specialKeyPressed(int,int,int)" (?specialKeyPressed@@YAXHHH@Z)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: void __thiscall Controls::specialKeyReleased(int,int,int)" (?specialKeyReleased@Controls@@QAEXHHH@Z) referenced in function "void __cdecl specialKeyReleased(int,int,int)" (?specialKeyReleased@@YAXHHH@Z)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: void __thiscall Controls::mouseButtonAction(int,int,int,int)" (?mouseButtonAction@Controls@@QAEXHHHH@Z) referenced in function "void __cdecl mouseButtonAction(int,int,int,int)" (?mouseButtonAction@@YAXHHHH@Z)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: void __thiscall Controls::mouseMovementAction(int,int)" (?mouseMovementAction@Controls@@QAEXHH@Z) referenced in function "void __cdecl mouseMovementAction(int,int)" (?mouseMovementAction@@YAXHH@Z)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: void __thiscall Controls::changedPositionByStrafe(float)" (?changedPositionByStrafe@Controls@@QAEXM@Z) referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: void __thiscall Controls::changeCameraHeight(float)" (?changeCameraHeight@Controls@@QAEXM@Z) referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: void __thiscall Controls::changedPositionInWorld(float)" (?changedPositionInWorld@Controls@@QAEXM@Z) referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: float __thiscall Controls::getCameraXDirection(void)" (?getCameraXDirection@Controls@@QAEMXZ) referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: float __thiscall Controls::getCameraYDirection(void)" (?getCameraYDirection@Controls@@QAEMXZ) referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: float __thiscall Controls::getCameraZDirection(void)" (?getCameraZDirection@Controls@@QAEMXZ) referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: float __thiscall Controls::getCameraXPosition(void)" (?getCameraXPosition@Controls@@QAEMXZ) referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: float __thiscall Controls::getCameraYPosition(void)" (?getCameraYPosition@Controls@@QAEMXZ) referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: float __thiscall Controls::getCameraZPosition(void)" (?getCameraZPosition@Controls@@QAEMXZ) referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: float __thiscall Controls::getFinalPedalValue(void)" (?getFinalPedalValue@Controls@@QAEMXZ) referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: float __thiscall Controls::getFinalStrafeValue(void)" (?getFinalStrafeValue@Controls@@QAEMXZ) referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
-     1>Source.obj : error LNK2019: unresolved external symbol "public: float __thiscall Controls::getFinalHeightValue(void)" (?getFinalHeightValue@Controls@@QAEMXZ) referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
-     1>C:\Users\Willy\git\MeshBuilder\Debug\MeshBuilder.exe : fatal error LNK1120: 19 unresolved externals
-     1>Done Building Project "C:\Users\Willy\git\MeshBuilder\MeshBuilder.vcxproj" (Rebuild target(s)) -- FAILED.
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Willy\git\MeshBuilder\Debug\MeshBuilder.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Willy\git\OpenGLControls\Debug ..\OpenGLControls\Debug\OpenGLControlsLib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Willy\git\MeshBuilder\Debug\MeshBuilder.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Willy\git\MeshBuilder\Debug\MeshBuilder.lib" /MACHINE:X86 Debug\Source.obj
+     1>OpenGLControlsLib.lib(Controls.obj) : warning LNK4204: 'C:\Users\Willy\git\MeshBuilder\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+         MeshBuilder.vcxproj -> C:\Users\Willy\git\MeshBuilder\Debug\MeshBuilder.exe
+     1>Done Building Project "C:\Users\Willy\git\MeshBuilder\MeshBuilder.vcxproj" (Rebuild target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:00.86
+Time Elapsed 00:00:00.99

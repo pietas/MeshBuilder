@@ -58,6 +58,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Willy\git\OpenGLControls\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>..\OpenGLControls\Debug\OpenGLControlsLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -83,11 +85,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Documents\Visual Studio 2013\Projects\StaticLibrary\OpenGLControlsLib\OpenGLControlsLib.vcxproj">
-      <Project>{f88c9862-c337-4009-8dc0-d35a95323f99}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
