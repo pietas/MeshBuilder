@@ -2,6 +2,7 @@
 #include "OpenGLControlsLib\Controls.h"
 #include <iostream>
 #include <fstream>
+#include "CubeMesh.h"
 
 using namespace std;
 

@@ -2,6 +2,7 @@
 #include "Source.h"
 
 Controls cameraControls;
+CubeMesh* mesh;
 
 int
 main(int argc, char **argv)
@@ -116,7 +117,7 @@ display(void)
 	cameraControls.changedPositionInWorld(cameraControls.getFinalPedalValue());
 
 	cameraControls.changedPositionByStrafe(cameraControls.getFinalStrafeValue());
-	
+
 	cameraControls.changeCameraHeight(cameraControls.getFinalHeightValue());
 
 	//Clears color and depth buffers.
@@ -153,6 +154,16 @@ display(void)
 	glTexCoord2f(0.0f, 0.0f);
 	glVertex3f(100.0f, 0.0f, -100.0f);
 	glEnd();
+
+	glPushMatrix();
+	{
+		glTranslatef(0.0f, 5.5f, -3.0f);
+		glPushMatrix();
+		mesh = new CubeMesh(2.0f, 2.0f, 2.0f);
+		glPopMatrix();
+	}
+	glPopMatrix();
+
 	float pos[] = { -1.0, 20.0, -2.0, 1.0 };
 	glLightfv(GL_LIGHT0, GL_POSITION, pos);
 
